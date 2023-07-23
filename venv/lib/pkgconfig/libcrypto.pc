@@ -1,0 +1,13 @@
+prefix=/home/pragnesh/Downloads/sentiment/krishNaik/venv
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+enginesdir=${libdir}/engines
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 1.0.2u
+Requires: 
+Libs: -L${libdir} -lcrypto
+Libs.private: -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/pragnesh/Downloads/sentiment/krishNaik/venv/lib -Wl,-rpath-link,/home/pragnesh/Downloads/sentiment/krishNaik/venv/lib -L/home/pragnesh/Downloads/sentiment/krishNaik/venv/lib -ldl
+Cflags: -I${includedir} 

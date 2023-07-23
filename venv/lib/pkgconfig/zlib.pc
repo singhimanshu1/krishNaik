@@ -1,0 +1,13 @@
+prefix=/home/pragnesh/Downloads/sentiment/krishNaik/venv
+exec_prefix=/home/pragnesh/Downloads/sentiment/krishNaik/venv
+libdir=/home/pragnesh/Downloads/sentiment/krishNaik/venv/lib
+sharedlibdir=/home/pragnesh/Downloads/sentiment/krishNaik/venv/lib
+includedir=/home/pragnesh/Downloads/sentiment/krishNaik/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
